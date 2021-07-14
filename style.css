@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/*====  RESET ============================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+body {
+  background-color: rebeccapurple;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container-logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ecb602;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  width: 4.5rem;
+}
+
+.image {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.4rem;
+  padding-bottom: 2.5rem;
+}
+
+.pw-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: rgb(46, 12, 80);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 20rem;
+  font-size: 1.1rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.pw-header {
+  padding: 1rem;
+}
+
+.pw {
+  background-color: rgb(69, 28, 109);
+  color: #eee;
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+}
+
+.pw button {
+  background-color: white;
+  border: none;
+  color: rgb(29, 2, 56);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, 20%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+}
+
+.pw:hover button {
+  opacity: 1;
+  transform: translate(0, 0%);
+}
+
+.pw-body {
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.generate {
+  background-color: #ecb602;
+  border: none;
+  color: rebeccapurple;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#len {
+  font-size: 1rem;
+  border-radius: 10%;
+}
+
+footer.section {
+  margin-top: 16.2rem;
+  padding: 2rem 0;
+  position: absolute;
+  width: 100%;
+  background: #ecb602;
+  color: rebeccapurple;
+}
+
+.container-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#vb {
+  color: rgb(46, 12, 80);
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.social-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*====  MEDIA QUERIES ============================ */
+/* extra large devices: 1200 > */
+@media (min-width: 1200px){
+  /* reusable classes */
+
+  #logo {
+    padding: 1.5rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ecb602;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  img {
+    width: 8rem;
+  }
+  
+  .pw-container {
+    background-color: rgb(46, 12, 80);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 40rem;
+    font-size: 1.2rem;
+  }
+  
+  .pw-header {
+    padding: 1rem;
+  }
+  
+  .pw {
+    background-color: rgb(69, 28, 109);
+    display: flex;
+    font-size: 2.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .pw button {
+    background-color: white;
+    border: none;
+    color: rgb(29, 2, 56);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+  }
+  
+  .pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+  }
+  
+  .pw-body {
+    padding: 0 1rem 1rem;
+  }
+  
+  .form-control {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+  }
+  
+  .generate {
+    background-color: #ecb602;
+    border: none;
+    color: rebeccapurple;
+    cursor: pointer;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  footer {
+    width: auto;
+    background: #ecb602;
+    color: rebeccapurple;
+  }
+  
+  footer.section {
+    padding: 3rem 0;
+  }
+  
+  footer .logo {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  #vb {
+    color: rgb(46, 12, 80);
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  .social-grid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 2.5rem;
+    
+  }
+
+  
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/padlock.png" type="image/png">
+    
+    <title>Gerador de Senhas</title>
+
+<!-- Icones -->
+<link rel="stylesheet" href="assets/fonts/style.css" />
+
+<!-- STYLE -->
+<link rel="stylesheet" href="style.css" />
+
+<!-- SCRIPT -->
+<script src="./script.js" defer></script>
+
+  </head>
+
+  <body>
+
+<header>
+<div class="container-logo">
+    <h1 id="logo">Gerador de Senhas</h1>
+</div>
+
+<div class="image">
+  <img id="padlock" src="./assets/padlock.png" alt="Senha">
+</div>
+</header>
+
+<main>
+    <div class="pw-container">
+      <div class="pw-header">
+        <div class="pw">
+          <span id="pw"></span>
+          <button id="copy">Copiar</button>
+        </div>
+      </div>
+      <div class="pw-body">
+        <div class="form-control">
+          <label for="upper">Tamanho da Senha</label>
+          <input id="len" value="8" type="number" min="8" max="20" />
+        </div>
+
+        <div class="form-control">
+          <label for="upper">Conter Letras Maiúsculas</label>
+          <input id="upper" type="checkbox" />
+        </div>
+
+        <div class="form-control">
+          <label for="lower">Conter Letras Minúsculas</label>
+          <input id="lower" type="checkbox" />
+        </div>
+
+        <div class="form-control">
+          <label for="number">Conter Números</label>
+          <input id="number" type="checkbox" />
+        </div>
+
+        <div class="form-control">
+          <label for="symbol">Conter Símbolos</label>
+          <input id="symbol" type="checkbox" />
+        </div>
+        <button class="generate" id="generate">Gerar Senha</button>
+      </div>
+    </div>
+  </main>
+
+    <footer class="section">
+        <div class="container-grid">
+          <h3 class="logo">Criado por <span id="vb">Vinicius Batista</span></h3>            
+          </div>
+  
+          <div class="social-grid">
+            <a href="https://instagram.com/vinaobatista" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+            <a href="https://twitter.com/v1n1san" target="_blank">
+              <i class="icon-twitter"></i
+            ></a>
+            <a href="https://linkedin.com/in/vinicius-batista-0120016a/" target="_blank">
+              <i class="icon-linkedin"></i
+            ></a>
+            <a href="https://github.com/vinibatista905" target="_blank">
+                <i class="icon-github"></i
+              ></a>
+          </div>
+        </div>
+      </footer>
+
+    </body>
+</html>
